@@ -1,4 +1,4 @@
-package com.sapient.training.data;
+package com.capgemini.training.data;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.sapient.training.entity.Employee;
+import com.capgemini.training.entity.Employee;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee,Long>{

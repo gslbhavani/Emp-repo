@@ -1,0 +1,384 @@
+2020-12-12 09:32:33,967 INFO com.sapient.training.app.SpringDataJpaAppApplication [restartedMain] Starting SpringDataJpaAppApplication on DESKTOP-B8FF4R1 with PID 16964 (F:\Corporate Training\KLS\Spring 5\Spring Data\spring-data-jpa-app\target\classes started by Admin in F:\Corporate Training\KLS\Spring 5\Spring Data\spring-data-jpa-app)
+2020-12-12 09:32:33,977 DEBUG com.sapient.training.app.SpringDataJpaAppApplication [restartedMain] Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-12-12 09:32:33,978 INFO com.sapient.training.app.SpringDataJpaAppApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-12-12 09:32:34,150 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-12 09:32:34,152 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-12 09:32:35,454 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-12 09:32:35,533 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 69ms. Found 1 JPA repository interfaces.
+2020-12-12 09:32:37,509 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2020-12-12 09:32:37,523 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2020-12-12 09:32:37,524 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2020-12-12 09:32:37,524 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-12 09:32:37,678 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-12-12 09:32:37,678 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3526 ms
+2020-12-12 09:32:38,272 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-12 09:32:38,381 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-12-12 09:32:38,595 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-12 09:32:38,771 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-12-12 09:32:39,009 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-12-12 09:32:39,057 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-12-12 09:32:40,715 WARN org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl [restartedMain] GenerationTarget encountered exception accepting command : Error executing DDL "alter table if exists employee_cg add column id int8 not null" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table if exists employee_cg add column id int8 not null" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:580)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:297)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:75)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:316)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:469)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.sapient.training.app.SpringDataJpaAppApplication.main(SpringDataJpaAppApplication.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "id" contains null values
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 40 common frames omitted
+2020-12-12 09:32:40,769 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-12 09:32:40,777 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-12 09:32:40,810 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-12-12 09:32:41,705 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-12 09:32:41,947 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12-12 09:32:42,530 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2020-12-12 09:32:42,568 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path '/springfox'
+2020-12-12 09:32:42,929 INFO com.sapient.training.app.SpringDataJpaAppApplication [restartedMain] Started SpringDataJpaAppApplication in 9.397 seconds (JVM running for 10.596)
+2020-12-12 09:33:37,725 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-12 09:33:37,725 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-2] Initializing Servlet 'dispatcherServlet'
+2020-12-12 09:33:37,747 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-2] Completed initialization in 21 ms
+2020-12-12 09:33:37,853 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-2] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 09:33:37,929 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8081-exec-2] SQL Error: 0, SQLState: 42703
+2020-12-12 09:33:37,929 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8081-exec-2] ERROR: column employee0_.id does not exist
+  Position: 8
+2020-12-12 09:33:37,936 ERROR com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-2] Exception in com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with cause = NULL
+2020-12-12 09:33:37,936 ERROR com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-2] Illegal argument: [] in com.sapient.training.service.EmployeeServiceImpl.getAllEmployees()
+2020-12-12 09:33:37,940 ERROR org.springframework.transaction.interceptor.TransactionInterceptor [http-nio-8081-exec-2] Application exception overridden by commit exception
+com.sapient.training.exception.EmployeeException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.sapient.training.service.EmployeeServiceImpl.getAllEmployees(EmployeeServiceImpl.java:62)
+	at com.sapient.training.service.EmployeeServiceImpl$$FastClassBySpringCGLIB$$33a81731.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.sapient.training.aspect.LoggingAspect.logAround(LoggingAspect.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.sapient.training.service.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$6518c35f.getAllEmployees(<generated>)
+	at com.sapient.training.controller.EmployeeRestController.getAllEmployees(EmployeeRestController.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-12-12 09:33:37,948 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox].[dispatcherServlet] [http-nio-8081-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [/springfox] threw exception [Request processing failed; nested exception is org.springframework.transaction.UnexpectedRollbackException: Transaction silently rolled back because it has been marked as rollback-only] with root cause
+org.springframework.transaction.UnexpectedRollbackException: Transaction silently rolled back because it has been marked as rollback-only
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:752)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.completeTransactionAfterThrowing(TransactionAspectSupport.java:667)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.sapient.training.service.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$6518c35f.getAllEmployees(<generated>)
+	at com.sapient.training.controller.EmployeeRestController.getAllEmployees(EmployeeRestController.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-12-12 09:39:45,019 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-12 09:39:45,023 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2020-12-12 09:39:45,035 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2020-12-12 09:39:45,159 INFO com.sapient.training.app.SpringDataJpaAppApplication [restartedMain] Starting SpringDataJpaAppApplication on DESKTOP-B8FF4R1 with PID 16964 (F:\Corporate Training\KLS\Spring 5\Spring Data\spring-data-jpa-app\target\classes started by Admin in F:\Corporate Training\KLS\Spring 5\Spring Data\spring-data-jpa-app)
+2020-12-12 09:39:45,159 DEBUG com.sapient.training.app.SpringDataJpaAppApplication [restartedMain] Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-12-12 09:39:45,159 INFO com.sapient.training.app.SpringDataJpaAppApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-12-12 09:39:45,890 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-12 09:39:45,898 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 7ms. Found 1 JPA repository interfaces.
+2020-12-12 09:39:46,217 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2020-12-12 09:39:46,218 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2020-12-12 09:39:46,219 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2020-12-12 09:39:46,219 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-12 09:39:46,267 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-12-12 09:39:46,267 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1105 ms
+2020-12-12 09:39:46,445 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-12 09:39:46,456 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2020-12-12 09:39:46,516 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2020-12-12 09:39:46,516 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-12-12 09:39:46,943 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-12 09:39:46,943 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-12 09:39:46,951 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-12-12 09:39:47,156 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-12 09:39:47,259 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12-12 09:39:47,438 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2020-12-12 09:39:47,453 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path '/springfox'
+2020-12-12 09:39:47,525 INFO com.sapient.training.app.SpringDataJpaAppApplication [restartedMain] Started SpringDataJpaAppApplication in 2.416 seconds (JVM running for 435.192)
+2020-12-12 09:39:47,528 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2020-12-12 09:42:34,974 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-12 09:42:34,975 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-2] Initializing Servlet 'dispatcherServlet'
+2020-12-12 09:42:34,980 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-2] Completed initialization in 5 ms
+2020-12-12 09:42:35,045 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-2] Enter: com.sapient.training.service.EmployeeServiceImpl.save() with argument[s] = [Employee(id=null, name=Rohit Sharma, job=Manager, hiredate=Fri Oct 15 05:30:00 IST 2010, salary=1350000.0)]
+2020-12-12 09:42:35,097 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-2] Exit: com.sapient.training.service.EmployeeServiceImpl.save() with result = Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=Fri Oct 15 05:30:00 IST 2010, salary=1350000.0)
+2020-12-12 09:43:07,712 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-3] Enter: com.sapient.training.service.EmployeeServiceImpl.save() with argument[s] = [Employee(id=null, name=Virat Kohli, job=Developer, hiredate=Tue Oct 15 05:30:00 IST 2019, salary=2350000.0)]
+2020-12-12 09:43:07,714 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-3] Exit: com.sapient.training.service.EmployeeServiceImpl.save() with result = Employee(id=2, name=Virat Kohli, job=Developer, hiredate=Tue Oct 15 05:30:00 IST 2019, salary=2350000.0)
+2020-12-12 09:43:44,944 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-4] Enter: com.sapient.training.service.EmployeeServiceImpl.save() with argument[s] = [Employee(id=null, name=Rahul, job=Developer, hiredate=Mon Oct 15 05:30:00 IST 2018, salary=350000.0)]
+2020-12-12 09:43:44,946 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-4] Exit: com.sapient.training.service.EmployeeServiceImpl.save() with result = Employee(id=3, name=Rahul, job=Developer, hiredate=Mon Oct 15 05:30:00 IST 2018, salary=350000.0)
+2020-12-12 09:44:23,167 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-5] Enter: com.sapient.training.service.EmployeeServiceImpl.save() with argument[s] = [Employee(id=null, name=Vinay Kumar, job=Manager, hiredate=Fri Aug 25 05:30:00 IST 2017, salary=1.935E7)]
+2020-12-12 09:44:23,169 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-5] Exit: com.sapient.training.service.EmployeeServiceImpl.save() with result = Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=Fri Aug 25 05:30:00 IST 2017, salary=1.935E7)
+2020-12-12 09:54:20,665 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-8] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 09:54:20,689 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-8] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 10:04:01,414 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-10] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 10:04:01,419 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-10] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 10:05:49,169 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-9] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-12 10:05:49,170 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-2 - Shutdown initiated...
+2020-12-12 10:05:49,185 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-2 - Shutdown completed.
+2020-12-12 10:05:49,281 INFO com.sapient.training.app.SpringDataJpaAppApplication [restartedMain] Starting SpringDataJpaAppApplication on DESKTOP-B8FF4R1 with PID 16964 (F:\Corporate Training\KLS\Spring 5\Spring Data\spring-data-jpa-app\target\classes started by Admin in F:\Corporate Training\KLS\Spring 5\Spring Data\spring-data-jpa-app)
+2020-12-12 10:05:49,281 DEBUG com.sapient.training.app.SpringDataJpaAppApplication [restartedMain] Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-12-12 10:05:49,281 INFO com.sapient.training.app.SpringDataJpaAppApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-12-12 10:05:49,822 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-12 10:05:49,830 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 8ms. Found 1 JPA repository interfaces.
+2020-12-12 10:05:50,070 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2020-12-12 10:05:50,071 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2020-12-12 10:05:50,071 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2020-12-12 10:05:50,071 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-12 10:05:50,104 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-12-12 10:05:50,104 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 819 ms
+2020-12-12 10:05:50,216 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-12 10:05:50,225 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2020-12-12 10:05:50,274 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2020-12-12 10:05:50,274 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-12-12 10:05:50,665 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-12 10:05:50,666 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-12 10:05:50,675 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-12-12 10:05:50,879 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-12 10:05:50,962 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12-12 10:05:51,134 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2020-12-12 10:05:51,148 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path '/springfox'
+2020-12-12 10:05:51,220 INFO com.sapient.training.app.SpringDataJpaAppApplication [restartedMain] Started SpringDataJpaAppApplication in 1.972 seconds (JVM running for 1998.886)
+2020-12-12 10:05:51,222 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2020-12-12 10:06:05,457 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-12 10:06:05,458 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-12-12 10:06:05,464 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Completed initialization in 6 ms
+2020-12-12 10:06:05,475 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-1] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 10:06:05,491 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-1] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 10:49:48,534 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-3] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 10:49:48,542 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-3] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:10:58,565 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-5] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:10:58,570 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-5] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:10:58,581 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-6] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:10:58,586 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-6] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:11:10,933 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-7] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:11:10,937 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-7] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:11:10,949 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-8] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:11:10,953 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-8] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:11:31,425 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-9] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:11:31,430 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-9] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:11:36,046 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-10] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:11:36,051 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-10] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:11:42,479 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-1] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:11:42,482 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-1] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:11:42,493 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-2] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:11:42,496 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-2] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:15:11,806 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-4] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:15:11,809 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-4] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:15:11,821 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-5] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:15:11,824 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-5] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:15:11,834 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-6] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:15:11,840 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-6] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:15:22,213 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-7] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:15:22,216 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-7] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:15:22,227 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-8] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:15:22,230 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-8] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:15:42,681 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-9] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:15:42,685 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-9] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:15:53,929 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-10] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:15:53,931 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-10] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:15:53,938 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-1] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:15:53,940 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-1] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:19:32,883 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-3] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:19:32,888 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-3] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:19:32,902 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-4] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:19:32,908 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-4] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:23:30,849 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-6] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:23:30,852 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-6] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:23:30,877 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-7] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:23:30,887 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-7] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:47:48,349 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-9] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:47:48,365 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-9] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:47:55,470 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-10] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:47:55,472 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-10] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:47:58,090 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-1] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:47:58,093 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-1] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 11:49:03,735 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-3] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 11:49:03,737 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-3] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 12:16:38,438 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-5] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 12:16:38,443 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-5] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 12:48:52,996 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-7] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 12:48:53,001 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-7] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 12:50:32,377 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-9] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 12:50:32,380 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-9] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 12:52:37,602 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-1] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 12:52:37,607 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-1] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 13:19:31,993 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-3] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 13:19:32,002 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-3] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7)]
+2020-12-12 13:19:41,674 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-5] Enter: com.sapient.training.service.EmployeeServiceImpl.save() with argument[s] = [Employee(id=null, name=null, job=Manager, hiredate=Sun Oct 25 05:30:00 IST 2020, salary=897999.0)]
+2020-12-12 13:19:41,704 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-5] Exit: com.sapient.training.service.EmployeeServiceImpl.save() with result = Employee(id=5, name=null, job=Manager, hiredate=Sun Oct 25 05:30:00 IST 2020, salary=897999.0)
+2020-12-12 13:19:41,748 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-6] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 13:19:41,752 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-6] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7), Employee(id=5, name=null, job=Manager, hiredate=2020-10-25, salary=897999.0)]
+2020-12-12 13:24:35,794 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-8] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 13:24:35,798 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-8] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7), Employee(id=5, name=null, job=Manager, hiredate=2020-10-25, salary=897999.0)]
+2020-12-12 13:24:57,635 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-9] Enter: com.sapient.training.service.EmployeeServiceImpl.save() with argument[s] = [Employee(id=null, name=null, job=Developer, hiredate=Sat Oct 10 05:30:00 IST 2020, salary=123456.0)]
+2020-12-12 13:24:57,637 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-9] Exit: com.sapient.training.service.EmployeeServiceImpl.save() with result = Employee(id=6, name=null, job=Developer, hiredate=Sat Oct 10 05:30:00 IST 2020, salary=123456.0)
+2020-12-12 13:24:57,672 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-10] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 13:24:57,676 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-10] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7), Employee(id=5, name=null, job=Manager, hiredate=2020-10-25, salary=897999.0), Employee(id=6, name=null, job=Developer, hiredate=2020-10-10, salary=123456.0)]
+2020-12-12 13:29:52,703 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-2] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 13:29:52,710 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-2] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7), Employee(id=5, name=null, job=Manager, hiredate=2020-10-25, salary=897999.0), Employee(id=6, name=null, job=Developer, hiredate=2020-10-10, salary=123456.0)]
+2020-12-12 13:31:57,292 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-4] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 13:31:57,296 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-4] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7), Employee(id=5, name=null, job=Manager, hiredate=2020-10-25, salary=897999.0), Employee(id=6, name=null, job=Developer, hiredate=2020-10-10, salary=123456.0)]
+2020-12-12 13:32:44,919 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-5] Enter: com.sapient.training.service.EmployeeServiceImpl.save() with argument[s] = [Employee(id=null, name=Hardhik Pandya, job=Analyst, hiredate=Sat May 12 05:30:00 IST 2018, salary=6758980.0)]
+2020-12-12 13:32:44,922 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-5] Exit: com.sapient.training.service.EmployeeServiceImpl.save() with result = Employee(id=7, name=Hardhik Pandya, job=Analyst, hiredate=Sat May 12 05:30:00 IST 2018, salary=6758980.0)
+2020-12-12 13:32:44,957 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-6] Enter: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with argument[s] = []
+2020-12-12 13:32:44,961 DEBUG com.sapient.training.aspect.LoggingAspect [http-nio-8081-exec-6] Exit: com.sapient.training.service.EmployeeServiceImpl.getAllEmployees() with result = [Employee(id=1, name=Rohit Sharma, job=Manager, hiredate=2010-10-15, salary=1350000.0), Employee(id=2, name=Virat Kohli, job=Developer, hiredate=2019-10-15, salary=2350000.0), Employee(id=3, name=Rahul, job=Developer, hiredate=2018-10-15, salary=350000.0), Employee(id=4, name=Vinay Kumar, job=Manager, hiredate=2017-08-25, salary=1.935E7), Employee(id=5, name=null, job=Manager, hiredate=2020-10-25, salary=897999.0), Employee(id=6, name=null, job=Developer, hiredate=2020-10-10, salary=123456.0), Employee(id=7, name=Hardhik Pandya, job=Analyst, hiredate=2018-05-12, salary=6758980.0)]

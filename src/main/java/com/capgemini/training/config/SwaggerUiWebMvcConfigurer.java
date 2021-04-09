@@ -1,4 +1,4 @@
-package com.sapient.training.config;
+package com.capgemini.training.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -35,14 +35,17 @@ public class SwaggerUiWebMvcConfigurer implements WebMvcConfigurer {
         .setViewName("forward:" + baseUrl + "/swagger-ui/index.html");
   }
 
-//  @Override
-//  public void addCorsMappings(CorsRegistry registry) {
-//    registry
-//        .addMapping("/api/emp")
-//        .allowedOrigins("http://editor.swagger.io");
-//    registry
-//        .addMapping("/v2/api-docs.*")
-//        .allowedOrigins("http://editor.swagger.io");
-//   
-//  }
+  @Override
+  public void addCorsMappings(CorsRegistry registry) {
+    registry
+        .addMapping("/api/emp")
+        .allowedOrigins("http://editor.swagger.io");
+    registry
+        .addMapping("/v2/api-docs.*")
+        .allowedOrigins("http://editor.swagger.io");
+    registry
+    .addMapping("/api/employees")
+    .allowedOrigins("*");
+   
+  }
 }

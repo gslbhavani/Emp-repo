@@ -27,9 +27,9 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.sapient.training.app.SpringDataJpaAppApplication;
-import com.sapient.training.data.EmployeeRepository;
-import com.sapient.training.entity.Employee;
+import com.capgemini.training.app.SpringDataJpaAppApplication;
+import com.capgemini.training.data.EmployeeRepository;
+import com.capgemini.training.entity.Employee;
 
 
 
@@ -63,7 +63,7 @@ public class EmployeeRestControllerIntegrationTest {
 
     @Test
     public void givenEmployees_whenGetEmployees_thenStatus200() throws Exception {
-        createTestEmployee("Vinay Kumar");
+        createTestEmployee("Rohit");
         createTestEmployee("alex");
 
         
@@ -72,7 +72,7 @@ public class EmployeeRestControllerIntegrationTest {
           .andExpect(status().is(201))
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(jsonPath("$", hasSize(greaterThanOrEqualTo(2))))
-          .andExpect(jsonPath("$[0].name", is("Vinay Kumar")))
+          .andExpect(jsonPath("$[0].name", is("Rohit")))
           .andExpect(jsonPath("$[1].name", is("alex")));
         
     }

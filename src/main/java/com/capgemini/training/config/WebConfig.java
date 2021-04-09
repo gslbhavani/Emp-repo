@@ -1,4 +1,4 @@
-package com.sapient.training.config;
+package com.capgemini.training.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

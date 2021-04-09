@@ -14,9 +14,9 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import com.sapient.training.app.SpringDataJpaAppApplication;
-import com.sapient.training.data.EmployeeRepository;
-import com.sapient.training.entity.Employee;
+import com.capgemini.training.app.SpringDataJpaAppApplication;
+import com.capgemini.training.data.EmployeeRepository;
+import com.capgemini.training.entity.Employee;
 
 
 

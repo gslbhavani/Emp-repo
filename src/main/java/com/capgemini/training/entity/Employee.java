@@ -1,4 +1,4 @@
-package com.sapient.training.entity;
+package com.capgemini.training.entity;
 
 import java.util.Date;
 
@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Entity
-@Table(name = "employee_sapient3")
+@Table(name = "employee_new")
 public class Employee {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

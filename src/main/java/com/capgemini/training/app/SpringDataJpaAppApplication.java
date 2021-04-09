@@ -1,4 +1,4 @@
-package com.sapient.training.app;
+package com.capgemini.training.app;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 import java.util.function.Predicate;
@@ -13,9 +13,9 @@ import springfox.documentation.oas.annotations.EnableOpenApi;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
-@SpringBootApplication(scanBasePackages = "com.sapient.training")
-@EnableJpaRepositories(basePackages = "com.sapient.training.data")
-@EntityScan(basePackages = "com.sapient.training.entity")
+@SpringBootApplication(scanBasePackages = "com.capgemini.training")
+@EnableJpaRepositories(basePackages = "com.capgemini.training.data")
+@EntityScan(basePackages = "com.capgemini.training.entity")
 @EnableOpenApi
 public class SpringDataJpaAppApplication {
 

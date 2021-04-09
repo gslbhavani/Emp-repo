@@ -17,11 +17,11 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import com.sapient.training.data.EmployeeRepository;
-import com.sapient.training.entity.Employee;
-import com.sapient.training.exception.EmployeeException;
-import com.sapient.training.service.EmployeeService;
-import com.sapient.training.service.EmployeeServiceImpl;
+import com.capgemini.training.data.EmployeeRepository;
+import com.capgemini.training.entity.Employee;
+import com.capgemini.training.exception.EmployeeException;
+import com.capgemini.training.service.EmployeeService;
+import com.capgemini.training.service.EmployeeServiceImpl;
 
 
 //@RunWith(SpringRunner.class)  : JUnit 4

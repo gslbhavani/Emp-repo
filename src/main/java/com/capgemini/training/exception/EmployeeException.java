@@ -1,4 +1,4 @@
-package com.sapient.training.exception;
+package com.capgemini.training.exception;
 
 public class EmployeeException extends Exception{	
 	private static final long serialVersionUID = 1L;

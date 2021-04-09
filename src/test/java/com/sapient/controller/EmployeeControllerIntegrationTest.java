@@ -28,9 +28,9 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.sapient.training.app.SpringDataJpaAppApplication;
-import com.sapient.training.entity.Employee;
-import com.sapient.training.service.EmployeeService;
+import com.capgemini.training.app.SpringDataJpaAppApplication;
+import com.capgemini.training.entity.Employee;
+import com.capgemini.training.service.EmployeeService;
 
 
 

@@ -1,4 +1,4 @@
-package com.sapient.training.exception;
+package com.capgemini.training.exception;
 
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpHeaders;

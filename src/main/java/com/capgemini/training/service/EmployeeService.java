@@ -1,9 +1,10 @@
-package com.sapient.training.service;
+package com.capgemini.training.service;
 
 import java.util.List;
+import java.util.Map;
 
-import com.sapient.training.entity.Employee;
-import com.sapient.training.exception.EmployeeException;
+import com.capgemini.training.entity.Employee;
+import com.capgemini.training.exception.EmployeeException;
 
 public interface EmployeeService {
 	public Employee getEmployeeById(Long id) throws EmployeeException;
@@ -14,4 +15,6 @@ public interface EmployeeService {
     public List<Employee> findByName(String name) throws EmployeeException;
     public List<Employee> findByJobAndSalary(String job,Double salary) throws EmployeeException;	
    	public List<Employee> findByJobAndSalaryGreaterThan(String job, Double salary) throws EmployeeException;
+   	public Employee updateEmployee(Employee employee) throws EmployeeException;
+   	public Map<String,Boolean> deleteEmployee(Long id) throws EmployeeException;
 }
